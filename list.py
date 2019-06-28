@@ -22,13 +22,13 @@ print(list2) # 1차원
 
 
 # Tensorflow 사용 pattern
-#  2차원 기준으로 append 되어진다 - WHY ??????
+# Y 축 기준으로 append 되어지며....
 list3 = []
-list3.append([0,1])  # 2차원 1st
+list3.append([0,1])  # Y 1st
 print(list3)
-list3.append([2,3])  # 2차원 2nd
+list3.append([2,3])  # Y 2nd
 print(list3)
-list3.append([4,5,6])  # 2차원 3rd
+list3.append([4,5,6])  # Y 3rd
 print(list3)
 # item[0] 은 list3[0] 이 아니다 - 각 행이 지니는 첫번째 의미로 사용된다
 x_data = [item[0] for item in list3]
